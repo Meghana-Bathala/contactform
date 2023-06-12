@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+</head>
+<style>   
+h2{
+    text-align: center;
+} 
+.container{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.part{
+    background-color: rgb(239, 238, 238);
+    padding:25px;
+}
+.part2{
+    padding:0;
+    border:1px solid rgb(155, 155, 155);
+    box-shadow: 1px 1px 1px 1px rgb(232, 232, 232);
+}
+form{
+     margin-top: 15px;
+} 
+.label1{
+    float:left;
+    margin-right:10px;  
+}
+.label2{
+    margin-bottom: 20px;
+}
+input{
+    width:200px;
+    border:none;
+    background-color: white;
+    padding:10px;
+    margin-top: 10px;
+
+}
+.label3 input{
+    width:430px;
+    border:none;
+    background-color: white;
+    padding:10px;
+    margin-bottom: 10px;
+}
+.label4 input{
+    width:430px;
+    border:none;
+    padding-bottom:60px;
+} 
+button{
+    margin-top:10px;
+    padding:10px;
+    background-color: rgb(56, 56, 148);
+    border:none;
+    color:white;
+    border-radius: 5px;
+}
+.footer{
+    display:grid;
+    margin:0 0 0 200px ;
+    grid-template-columns: auto auto auto auto;
+}
+</style>
+<body>
+    <h2>Contact Form #06</h2>
+    <!--dividing the main part(container) into two sections:one for form(part) & another for map(part2)-->
+        <div class="container">
+            <div class="part"><!--form part-->
+            <h3>Contact Us</h3>
+                <form action="">
+                    <div class="label1">
+                        <label for="full name">FULL NAME</label><br>
+                        <input type="text" id="full name" placeholder="Name">
+                    </div>
+                    <div class="label2">
+                        <label for="email"> EMAIL ADDRESS</label><br>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="label3">
+                        <label for="subject">SUBJECT</label><br>
+                        <input type="text" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="label4">
+                        <label for="msg">MESSAGE</label><br>
+                        <input type="text" id="msg" placeholder="Message">
+                    </div>
+                </form>
+                <button>Send Message</button>
+            </div>
+            <div class="part2"><!--map part-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15222.223931969109!2d78.3955875!3d17.48095345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1686419691469!5m2!1sen!2sin" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="footer"><!--sectoin with some icons:styled using grid-->
+            <div>
+                <img src="https://t4.ftcdn.net/jpg/03/94/13/75/360_F_394137592_TrU1phy53zBu1BwK4d3nFQC1i9IKoy08.jpg" alt="" width="30px" height="40px">
+                <p><b>Address</b>:198 West 21th street,<br>Suite 721 New York NY 10016</p>   
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVysNDfWMZK2FU4xbrgDSfZaKz7XETubK-2J2jPsSI6kHlNAmzSFxWXURV6MYlyM-enHg&usqp=CAU" alt="" width="40px" height="40px">
+                <p><b>phone</b>:<a href="">+91xxxxxxxx</a></p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVysNDfWMZK2FU4xbrgDSfZaKz7XETubK-2J2jPsSI6kHlNAmzSFxWXURV6MYlyM-enHg&usqp=CAU" alt="" width="40px" height="40px">
+                <p><b>Email</b>:<a href="">xxxxxx@gmail.com</a></p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVysNDfWMZK2FU4xbrgDSfZaKz7XETubK-2J2jPsSI6kHlNAmzSFxWXURV6MYlyM-enHg&usqp=CAU" alt="" width="40px" height="40px">
+                <p><b>website</b>:<a href="">yoursite.com</a></p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
